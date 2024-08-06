@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px solid;
+            height: 300px;
+            width: 260px;
+            background-color: chocolate;
+            margin: 100px 400px;
+        }
+        .c{
+            margin-left: 70px;
+            padding-top: 80px;
+        }
+        button{
+            border-radius: 10px;
+            background-color:black;
+            margin: 2px;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        img{
+            margin: 60px 50px;
+        }
+        .s:hover~img{
+            transition: all 4s;
+            transform: translate(50px,100px);
+        }
+        .b:hover~img{
+            transition: all 4s;
+            transform: rotate(360deg);
+        }
+        .t:hover~img{
+            transition: all 4s;
+            transform: scale(2);
+        }
+        .u:hover~img{
+            transition: all 4s;
+            transform: skew(140deg,100deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="s">Translate</button>
+        <button class="b">Rotate</button>
+        <button class="t">Scale</button>
+        <button class="u">Skew</button>
+    <img src="./star.jpg" alt="" height="100px">
+</div>
+</body>
+</html>
